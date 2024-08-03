@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+
+  .container{
+    width: 100%;
+    padding: 20px;
+  }
+
+    /* header */
+
+  header{
+    display: flex;
+    justify-content: space-between;
+   
+  }
+
+  header > div{
+    flex-basis: 10%;
+  }
+
+  header > div > img{
+    width: 100%;
+  }
+
+  nav>button {
+      background-color: rgb(234, 234, 243);
+      border: none;
+      padding: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+  }
+
+  nav>button:hover {
+      background-color: rgb(102, 167, 251);
+  }
+
+  nav>button>a {
+      color: black;
+      text-decoration: none;
+  }
+
+    /* /header */
+
+    /* main */
+
+  .main-container{
+    margin: 40px;
+  }
+
+  .main-container > h2{
+    color: red;
+    font-weight: 100;
+  }
+
+  form div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.name-title{
+  min-width: 690px;
+  font-size: 18px;
+}
+
+.form-title {
+    min-width: 190px;
+}
+
+.form-info{
+    margin-left: 10px;
+    font-size: 18px;
+}
+
+form div input {
+  min-width: 400px;
+  padding: 5px;
+  outline-color: rgb(86, 64, 229);
+}
+
+.button-block button{
+  margin-left: 600px;
+  width: inherit;
+  color: black;
+  background-color: rgb(234, 234, 243);
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button-block button:hover{
+  background-color: rgb(102, 167, 251);
+}
+
+/* footer */
+
+footer > div{
+  margin-top: 10px;
+}
+
+footer > div > a{
+  text-decoration: none;
+  padding: 5px;
+}
+
+footer > div > a:hover{
+  text-decoration: underline;
+}
+
+/* /footer */
+
+@media(max-width: 960px) {
+
+  .name-title{
+    min-width: initial;
+  }
+
+  .form-info{ 
+    display: none;
+  }
+
+  form div input {
+   min-width: initial;
+   width: 500px;
+  }
+}
+
+@media(max-width: 823px) {
+  .button-block{
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .button-block button{
+    margin-left: initial;
+    display: block;
+  }
+}

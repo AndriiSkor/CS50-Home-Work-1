@@ -1,43 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ua">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Пошук</title>
+    <title>Зображення</title>
     <style>
         body {
             font-family: Arial, sans-serif;
         }
-        </style>
-    <link href="HomeWork1.css" rel="stylesheet">
+    </style>
+    <link href="img.css" rel="stylesheet">
 </head>
 
 <body>
     <div class="container">
         <header>
             <nav>
-                <button><a href="img.html">Пошук по зображенню</a></button>
-                <button><a href="Extended.html">Розширений пошук</a></button>
+                <button style="min-width: 140px"><a href="HomeWork1.html">Пошук Google</a></button>
+                <button><a href="extended.html">Розширений пошук</a></button>
             </nav>
         </header>
         <main>
             <div class="main-container">
-                <img src="Google-Logo.png" alt="google">
+                <img src="Google-Pictures.png" alt="google">
 
                 <form action="https://google.com/search">
                     <div class="icon">
-                        <input class="input-form" type="text" name="q" placeholder="Пошук">
-                    </div>
-                    <div class="buttons">
-                        <button type="submit" value="Google Search">Пошук Google</button>
-                        <button> <a href="https://doodles.google/">Мені пощастить!</a></button>
+                        <input class="input-form" type="text" name="q" placeholder="Пошук зображення">
+                        <input type="hidden" name="tbm" value="isch">
                     </div>
                 </form>
             </div>
         </main>
         <p style="padding: 5px;">Україна</p>
-        <hr style="border: 0.5px solid rgba(128, 128, 128, 0.3)">
+        <hr style="border: 1px solid rgba(128, 128, 128, 0.3)">
         <footer>
             <div>
                 <a href="https://about.google/?utm_source=google-UA&utm_medium=referral&utm_campaign=hp-footer&fg=1">Про

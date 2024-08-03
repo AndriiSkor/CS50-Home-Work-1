@@ -6,30 +6,31 @@
 
   .container{
     width: 100%;
-    padding: 30px;
+    padding: 20px;
   }
   /* header */
   
   header{
     display: flex;
     justify-content: flex-end;
+   
   }
 
-  nav > button{
-    background-color: rgb(234, 234, 243);
-    border: none;
-    padding: 10px;
-    border-radius: 5px;
-    cursor: pointer;
+  nav>button {
+      background-color: rgb(234, 234, 243);
+      border: none;
+      padding: 10px;
+      border-radius: 5px;
+      cursor: pointer;
   }
 
-  nav > button:hover{
-    background-color: rgb(102, 167, 251);
+  nav>button:hover {
+      background-color: rgb(102, 167, 251);
   }
 
-  nav > button > a{
-    color: black;
-    text-decoration: none;
+  nav>button>a {
+      color: black;
+      text-decoration: none;
   }
 
  /* /header */
@@ -41,12 +42,14 @@
     justify-content: center;
     align-items: center;
     height: 80vh;
+    
  }
 
  .main-container{
     text-align: center;
     width: 300px;
     border: none;
+   
  }
 
  img{
@@ -57,7 +60,7 @@
   position: relative;
   width: 100%;
   font-style: initial;
-  font-weight: 200;
+  font-weight: 100;
   line-height: inherit;
   border: none;
   box-shadow: 0 0 3px 0px #003cff;
@@ -82,26 +85,6 @@
   filter: invert(60%);
  }
 
- .buttons{
-    margin-top: 20px;
- }
-
- .buttons > button{
-        background-color: rgb(234, 234, 243);
-        border: none;
-        padding: 10px;
-        border-radius: 5px;
-        cursor: pointer;
-    }
-
- .buttons > button:hover{
-        background-color: rgb(102, 167, 251);
-    }
-
- .buttons > button > a{
-  text-decoration: none;
-  color: black;
- }
  /* /main */
 
 /* footer */
@@ -113,7 +96,7 @@ footer{
 }
 
 footer > div{
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 footer > div > a{
@@ -127,14 +110,25 @@ footer > div > a:hover{
 
 /* /footer */
 
+@media(max-width: 990px) {
+  main{
+    height: 75vh;
+  }
+
+  footer{
+    display: block;
+    text-align: center;
+  }
+}
+
 @media(max-width: 600px) {
   header {
     justify-content: center;
   }
 
-  .main-container{
+  /* .main-container{
     width: 250px;
- }
+ } */
 }
 
 @media(max-width: 430px) {
